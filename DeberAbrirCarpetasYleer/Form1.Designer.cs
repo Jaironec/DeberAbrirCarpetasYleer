@@ -30,18 +30,18 @@ namespace DeberAbrirCarpetasYleer
         private void InitializeComponent()
         {
             this.Grupos1 = new System.Windows.Forms.GroupBox();
-            this.listAbrirTextos = new System.Windows.Forms.ListBox();
             this.listAbrirArchivos = new System.Windows.Forms.ListBox();
             this.listAbrirCarpetas = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCargar = new System.Windows.Forms.Button();
             this.textCargar = new System.Windows.Forms.TextBox();
+            this.textLeer = new System.Windows.Forms.TextBox();
             this.Grupos1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Grupos1
             // 
-            this.Grupos1.Controls.Add(this.listAbrirTextos);
+            this.Grupos1.Controls.Add(this.textLeer);
             this.Grupos1.Controls.Add(this.listAbrirArchivos);
             this.Grupos1.Controls.Add(this.listAbrirCarpetas);
             this.Grupos1.Location = new System.Drawing.Point(12, 75);
@@ -49,14 +49,6 @@ namespace DeberAbrirCarpetasYleer
             this.Grupos1.Size = new System.Drawing.Size(776, 363);
             this.Grupos1.TabIndex = 0;
             this.Grupos1.TabStop = false;
-            // 
-            // listAbrirTextos
-            // 
-            this.listAbrirTextos.FormattingEnabled = true;
-            this.listAbrirTextos.Location = new System.Drawing.Point(528, 18);
-            this.listAbrirTextos.Name = "listAbrirTextos";
-            this.listAbrirTextos.Size = new System.Drawing.Size(242, 316);
-            this.listAbrirTextos.TabIndex = 2;
             // 
             // listAbrirArchivos
             // 
@@ -104,6 +96,16 @@ namespace DeberAbrirCarpetasYleer
             this.textCargar.Size = new System.Drawing.Size(331, 20);
             this.textCargar.TabIndex = 4;
             // 
+            // textLeer
+            // 
+            this.textLeer.Location = new System.Drawing.Point(528, 20);
+            this.textLeer.Multiline = true;
+            this.textLeer.Name = "textLeer";
+            this.textLeer.ReadOnly = true;
+            this.textLeer.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textLeer.Size = new System.Drawing.Size(242, 315);
+            this.textLeer.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,6 +118,7 @@ namespace DeberAbrirCarpetasYleer
             this.Name = "Form1";
             this.Text = "Form1";
             this.Grupos1.ResumeLayout(false);
+            this.Grupos1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,10 +129,10 @@ namespace DeberAbrirCarpetasYleer
         private System.Windows.Forms.GroupBox Grupos1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCargar;
-        private System.Windows.Forms.ListBox listAbrirTextos;
         private System.Windows.Forms.ListBox listAbrirArchivos;
         private System.Windows.Forms.ListBox listAbrirCarpetas;
         private System.Windows.Forms.TextBox textCargar;
+        private System.Windows.Forms.TextBox textLeer;
     }
 }
 

@@ -56,7 +56,7 @@ namespace DeberAbrirCarpetasYleer
                 aux += cad + Environment.NewLine;
                 cad = sr.ReadLine();
             }
-            this.listAbrirTextos.Text = aux;
+            this.textLeer.Text = aux;
             sr.Close();
 
         }
