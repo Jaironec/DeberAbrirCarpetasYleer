@@ -1,0 +1,5 @@
+Calificación: 1.8/3
+
+Se cuelga al leer el archivo
+No se despliegan los archivos contenidos en la carpeta
+No entregó el ejercicio realizado en clase
